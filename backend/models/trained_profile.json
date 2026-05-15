@@ -1,0 +1,565 @@
+{
+  "version": "1.0",
+  "trained_at": "2026-05-15T14:30:14.148238",
+  "training_samples": {
+    "correct": 4,
+    "misplaced": 6
+  },
+  "training_accuracy": 80.0,
+  "feature_keys": [
+    "aspect_variance",
+    "avg_aspect_ratio",
+    "avg_desk_distance",
+    "avg_desk_overlap",
+    "avg_spacing",
+    "blue_desk_exposure",
+    "edge_density",
+    "floor_exposure",
+    "max_desk_distance",
+    "min_desk_overlap",
+    "std_chair_x",
+    "std_chair_y",
+    "std_spacing",
+    "x_variance",
+    "y_variance"
+  ],
+  "normalization": {
+    "mean": [
+      0.2248460839048577,
+      1.6992071476122372,
+      1.0,
+      0.0,
+      0.14369216349684405,
+      0.21755260416666666,
+      0.021937673611111114,
+      0.3370154513888889,
+      1.0,
+      0.0,
+      0.21604731161032537,
+      0.1551315544602262,
+      0.08462816211769661,
+      0.05367388914746468,
+      0.024632474548620102
+    ],
+    "std": [
+      0.10742269722909609,
+      0.13500586037534199,
+      1e-08,
+      1e-08,
+      0.06511352054995377,
+      0.04495052573761577,
+      0.007479583942488926,
+      0.07211344205840997,
+      1e-08,
+      1e-08,
+      0.08365076189988228,
+      0.023804954011149834,
+      0.04142658742758467,
+      0.029553819794189844,
+      0.007904841562879098
+    ]
+  },
+  "classifier": {
+    "type": "centroid_linear",
+    "correct_centroid": [
+      0.032615512567445715,
+      -0.34289651703722895,
+      0.0,
+      0.0,
+      -0.16152505866869615,
+      0.10504701169326619,
+      0.03409744769003195,
+      -0.16832203405529172,
+      0.0,
+      0.0,
+      -0.6554148280221951,
+      -0.20228935799762687,
+      -0.11613036834010892,
+      -0.5487657881075078,
+      -0.11363717563203318
+    ],
+    "misplaced_centroid": [
+      -0.02174367504496384,
+      0.2285976780248171,
+      0.0,
+      0.0,
+      0.107683372445797,
+      -0.07003134112884397,
+      -0.02273163179335529,
+      0.11221468937019452,
+      0.0,
+      0.0,
+      0.4369432186814631,
+      0.13485957199841783,
+      0.07742024556007253,
+      0.3658438587383385,
+      0.07575811708802237
+    ],
+    "decision_boundary": [
+      0.005435918761240938,
+      -0.05714941950620593,
+      0.0,
+      0.0,
+      -0.02692084311144958,
+      0.017507835282211108,
+      0.005682907948338331,
+      -0.028053672342548602,
+      0.0,
+      0.0,
+      -0.109235804670366,
+      -0.03371489299960452,
+      -0.019355061390018198,
+      -0.09146096468458462,
+      -0.018939529272005408
+    ],
+    "decision_direction": [
+      -0.03289139313065771,
+      0.3457969308831862,
+      0.0,
+      0.0,
+      0.16289132952113822,
+      -0.10593555908891854,
+      -0.03438586330371815,
+      0.16974579759296826,
+      0.0,
+      0.0,
+      0.6609586995624117,
+      0.20400043648829197,
+      0.11711266507260486,
+      0.5534075613858365,
+      0.11459838352200147
+    ]
+  },
+  "reference_profiles": {
+    "correct": {
+      "avg": {
+        "std_chair_y": 0.15031606559614766,
+        "std_chair_x": 0.16122136188578845,
+        "avg_aspect_ratio": 1.6529141083099181,
+        "aspect_variance": 0.2283497302363622,
+        "avg_spacing": 0.13317469826988743,
+        "std_spacing": 0.07981727726065747,
+        "avg_desk_overlap": 0.0,
+        "min_desk_overlap": 0.0,
+        "avg_desk_distance": 1.0,
+        "max_desk_distance": 1.0,
+        "floor_exposure": 0.3248771701388889,
+        "edge_density": 0.02219270833333333,
+        "x_variance": 0.03745576393651883,
+        "y_variance": 0.02373419067959582,
+        "blue_desk_exposure": 0.22227452256944447
+      },
+      "std": {
+        "std_chair_y": 0.033753090277639,
+        "std_chair_x": 0.10706743859927945,
+        "avg_aspect_ratio": 0.06725970851850936,
+        "aspect_variance": 0.16791405200385015,
+        "avg_spacing": 0.07848369398667972,
+        "std_spacing": 0.053807849530828435,
+        "avg_desk_overlap": 0.0,
+        "min_desk_overlap": 0.0,
+        "avg_desk_distance": 0.0,
+        "max_desk_distance": 0.0,
+        "floor_exposure": 0.07153773456032671,
+        "edge_density": 0.007675728815534944,
+        "x_variance": 0.039006979617218815,
+        "y_variance": 0.01131061030482679,
+        "blue_desk_exposure": 0.05803338581785363
+      },
+      "samples": [
+        {
+          "std_chair_y": 0.13677527601314585,
+          "std_chair_x": 0.06089723023990199,
+          "avg_aspect_ratio": 1.707196843632288,
+          "aspect_variance": 0.10183527495200473,
+          "avg_spacing": 0.0815023574544704,
+          "std_spacing": 0.035746033780364186,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.30715625,
+          "edge_density": 0.016880208333333334,
+          "x_variance": 0.003708472650891633,
+          "y_variance": 0.018707476128472227,
+          "blue_desk_exposure": 0.2685998263888889
+        },
+        {
+          "std_chair_y": 0.12013230553574393,
+          "std_chair_x": 0.3144322596969325,
+          "avg_aspect_ratio": 1.6547963627216586,
+          "aspect_variance": 0.19872820975309588,
+          "avg_spacing": 0.10130472146782178,
+          "std_spacing": 0.08023052790497673,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.24458159722222222,
+          "edge_density": 0.01967013888888889,
+          "x_variance": 0.0988676459381192,
+          "y_variance": 0.014431770833333333,
+          "blue_desk_exposure": 0.2253828125
+        },
+        {
+          "std_chair_y": 0.20758140482255502,
+          "std_chair_x": 0.20865872736641725,
+          "avg_aspect_ratio": 1.5424663832534375,
+          "aspect_variance": 0.5110001612883435,
+          "avg_spacing": 0.2683893567027871,
+          "std_spacing": 0.1675465135769248,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.4406145833333333,
+          "edge_density": 0.035340277777777776,
+          "x_variance": 0.043538464506172846,
+          "y_variance": 0.043090039628105474,
+          "blue_desk_exposure": 0.126515625
+        },
+        {
+          "std_chair_y": 0.13677527601314585,
+          "std_chair_x": 0.06089723023990199,
+          "avg_aspect_ratio": 1.707196843632288,
+          "aspect_variance": 0.10183527495200473,
+          "avg_spacing": 0.0815023574544704,
+          "std_spacing": 0.035746033780364186,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.30715625,
+          "edge_density": 0.016880208333333334,
+          "x_variance": 0.003708472650891633,
+          "y_variance": 0.018707476128472227,
+          "blue_desk_exposure": 0.2685998263888889
+        }
+      ]
+    },
+    "misplaced": {
+      "avg": {
+        "std_chair_y": 0.1583418803696119,
+        "std_chair_x": 0.2525979447600167,
+        "avg_aspect_ratio": 1.7300691738137832,
+        "aspect_variance": 0.22251031968385468,
+        "avg_spacing": 0.15070380698148178,
+        "std_spacing": 0.08783541868905603,
+        "avg_desk_overlap": 0.0,
+        "min_desk_overlap": 0.0,
+        "avg_desk_distance": 1.0,
+        "max_desk_distance": 1.0,
+        "floor_exposure": 0.3451076388888889,
+        "edge_density": 0.021767650462962963,
+        "x_variance": 0.06448597262142859,
+        "y_variance": 0.025231330461302964,
+        "blue_desk_exposure": 0.21440465856481483
+      },
+      "std": {
+        "std_chair_y": 0.012616631179458404,
+        "std_chair_x": 0.026081620433634364,
+        "avg_aspect_ratio": 0.15805239261963064,
+        "aspect_variance": 0.0205506891869574,
+        "avg_spacing": 0.053262689425267996,
+        "std_spacing": 0.0300726261695185,
+        "avg_desk_overlap": 0.0,
+        "min_desk_overlap": 0.0,
+        "avg_desk_distance": 0.0,
+        "max_desk_distance": 0.0,
+        "floor_exposure": 0.07135664941020646,
+        "edge_density": 0.007340973983396961,
+        "x_variance": 0.012210525939802708,
+        "y_variance": 0.004238013930328525,
+        "blue_desk_exposure": 0.0331294173159287
+      },
+      "samples": [
+        {
+          "std_chair_y": 0.16064839919297455,
+          "std_chair_x": 0.2792086164485584,
+          "avg_aspect_ratio": 1.7954908269422476,
+          "aspect_variance": 0.21981774816431848,
+          "avg_spacing": 0.17982323677224366,
+          "std_spacing": 0.07442055790199728,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.3846145833333333,
+          "edge_density": 0.018100694444444444,
+          "x_variance": 0.07795745149911817,
+          "y_variance": 0.025807908163265305,
+          "blue_desk_exposure": 0.2345876736111111
+        },
+        {
+          "std_chair_y": 0.15123445168016447,
+          "std_chair_x": 0.2567685584190412,
+          "avg_aspect_ratio": 1.9163222231106576,
+          "aspect_variance": 0.22841922149152566,
+          "avg_spacing": 0.11446050847804441,
+          "std_spacing": 0.06553201403398488,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.38441319444444444,
+          "edge_density": 0.017180555555555557,
+          "x_variance": 0.06593009259259258,
+          "y_variance": 0.022871859375,
+          "blue_desk_exposure": 0.2436640625
+        },
+        {
+          "std_chair_y": 0.18542633856900703,
+          "std_chair_x": 0.19674038986913533,
+          "avg_aspect_ratio": 1.4935539163534997,
+          "aspect_variance": 0.25971074386349335,
+          "avg_spacing": 0.25796572966080805,
+          "std_spacing": 0.1528499173371769,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.42475694444444445,
+          "edge_density": 0.037960069444444446,
+          "x_variance": 0.03870678100585937,
+          "y_variance": 0.03438292703510802,
+          "blue_desk_exposure": 0.14816145833333333
+        },
+        {
+          "std_chair_y": 0.15075382054768038,
+          "std_chair_x": 0.2630507727021618,
+          "avg_aspect_ratio": 1.629362926682818,
+          "aspect_variance": 0.1993474915461325,
+          "avg_spacing": 0.11875642924987506,
+          "std_spacing": 0.08433900441359611,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.24622395833333333,
+          "edge_density": 0.02009201388888889,
+          "x_variance": 0.0691957090192044,
+          "y_variance": 0.022726714409722223,
+          "blue_desk_exposure": 0.20817534722222222
+        },
+        {
+          "std_chair_y": 0.15123445168016447,
+          "std_chair_x": 0.2567685584190412,
+          "avg_aspect_ratio": 1.9163222231106576,
+          "aspect_variance": 0.22841922149152566,
+          "avg_spacing": 0.11446050847804441,
+          "std_spacing": 0.06553201403398488,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.38441319444444444,
+          "edge_density": 0.017180555555555557,
+          "x_variance": 0.06593009259259258,
+          "y_variance": 0.022871859375,
+          "blue_desk_exposure": 0.2436640625
+        },
+        {
+          "std_chair_y": 0.15075382054768038,
+          "std_chair_x": 0.2630507727021618,
+          "avg_aspect_ratio": 1.629362926682818,
+          "aspect_variance": 0.1993474915461325,
+          "avg_spacing": 0.11875642924987506,
+          "std_spacing": 0.08433900441359611,
+          "avg_desk_overlap": 0.0,
+          "min_desk_overlap": 0.0,
+          "avg_desk_distance": 1.0,
+          "max_desk_distance": 1.0,
+          "floor_exposure": 0.24622395833333333,
+          "edge_density": 0.02009201388888889,
+          "x_variance": 0.0691957090192044,
+          "y_variance": 0.022726714409722223,
+          "blue_desk_exposure": 0.20817534722222222
+        }
+      ]
+    }
+  },
+  "feature_importance": {
+    "std_chair_x": {
+      "fisher_score": 1.1726666299978015,
+      "correct_mean": 0.16122136188578845,
+      "correct_std": 0.10706743859927945,
+      "misplaced_mean": 0.2525979447600167,
+      "misplaced_std": 0.026081620433634364,
+      "threshold": 0.20690965332290256,
+      "direction": "higher_is_misplaced"
+    },
+    "x_variance": {
+      "fisher_score": 0.9352390372959598,
+      "correct_mean": 0.03745576393651883,
+      "correct_std": 0.039006979617218815,
+      "misplaced_mean": 0.06448597262142859,
+      "misplaced_std": 0.012210525939802708,
+      "threshold": 0.05097086827897371,
+      "direction": "higher_is_misplaced"
+    },
+    "avg_aspect_ratio": {
+      "fisher_score": 0.6352370387284417,
+      "correct_mean": 1.6529141083099181,
+      "correct_std": 0.06725970851850936,
+      "misplaced_mean": 1.7300691738137832,
+      "misplaced_std": 0.15805239261963064,
+      "threshold": 1.6914916410618508,
+      "direction": "higher_is_misplaced"
+    },
+    "std_chair_y": {
+      "fisher_score": 0.3149860086546551,
+      "correct_mean": 0.15031606559614766,
+      "correct_std": 0.033753090277639,
+      "misplaced_mean": 0.1583418803696119,
+      "misplaced_std": 0.012616631179458404,
+      "threshold": 0.1543289729828798,
+      "direction": "higher_is_misplaced"
+    },
+    "floor_exposure": {
+      "fisher_score": 0.28315248103779195,
+      "correct_mean": 0.3248771701388889,
+      "correct_std": 0.07153773456032671,
+      "misplaced_mean": 0.3451076388888889,
+      "misplaced_std": 0.07135664941020646,
+      "threshold": 0.3349924045138889,
+      "direction": "higher_is_misplaced"
+    },
+    "avg_spacing": {
+      "fisher_score": 0.26135779517016045,
+      "correct_mean": 0.13317469826988743,
+      "correct_std": 0.07848369398667972,
+      "misplaced_mean": 0.15070380698148178,
+      "misplaced_std": 0.053262689425267996,
+      "threshold": 0.1419392526256846,
+      "direction": "higher_is_misplaced"
+    },
+    "std_spacing": {
+      "fisher_score": 0.18395726984722,
+      "correct_mean": 0.07981727726065747,
+      "correct_std": 0.053807849530828435,
+      "misplaced_mean": 0.08783541868905603,
+      "misplaced_std": 0.0300726261695185,
+      "threshold": 0.08382634797485675,
+      "direction": "higher_is_misplaced"
+    },
+    "y_variance": {
+      "fisher_score": 0.17529239876362918,
+      "correct_mean": 0.02373419067959582,
+      "correct_std": 0.01131061030482679,
+      "misplaced_mean": 0.025231330461302964,
+      "misplaced_std": 0.004238013930328525,
+      "threshold": 0.024482760570449392,
+      "direction": "higher_is_misplaced"
+    },
+    "blue_desk_exposure": {
+      "fisher_score": 0.16655220454074274,
+      "correct_mean": 0.22227452256944447,
+      "correct_std": 0.05803338581785363,
+      "misplaced_mean": 0.21440465856481483,
+      "misplaced_std": 0.0331294173159287,
+      "threshold": 0.21833959056712965,
+      "direction": "lower_is_misplaced"
+    },
+    "edge_density": {
+      "fisher_score": 0.056597208495738904,
+      "correct_mean": 0.02219270833333333,
+      "correct_std": 0.007675728815534944,
+      "misplaced_mean": 0.021767650462962963,
+      "misplaced_std": 0.007340973983396961,
+      "threshold": 0.02198017939814815,
+      "direction": "lower_is_misplaced"
+    },
+    "aspect_variance": {
+      "fisher_score": 0.048816701593553925,
+      "correct_mean": 0.2283497302363622,
+      "correct_std": 0.16791405200385015,
+      "misplaced_mean": 0.22251031968385468,
+      "misplaced_std": 0.0205506891869574,
+      "threshold": 0.22543002496010844,
+      "direction": "lower_is_misplaced"
+    },
+    "avg_desk_distance": {
+      "fisher_score": 0.0,
+      "correct_mean": 1.0,
+      "correct_std": 0.0,
+      "misplaced_mean": 1.0,
+      "misplaced_std": 0.0,
+      "threshold": 1.0,
+      "direction": "lower_is_misplaced"
+    },
+    "avg_desk_overlap": {
+      "fisher_score": 0.0,
+      "correct_mean": 0.0,
+      "correct_std": 0.0,
+      "misplaced_mean": 0.0,
+      "misplaced_std": 0.0,
+      "threshold": 0.0,
+      "direction": "lower_is_misplaced"
+    },
+    "max_desk_distance": {
+      "fisher_score": 0.0,
+      "correct_mean": 1.0,
+      "correct_std": 0.0,
+      "misplaced_mean": 1.0,
+      "misplaced_std": 0.0,
+      "threshold": 1.0,
+      "direction": "lower_is_misplaced"
+    },
+    "min_desk_overlap": {
+      "fisher_score": 0.0,
+      "correct_mean": 0.0,
+      "correct_std": 0.0,
+      "misplaced_mean": 0.0,
+      "misplaced_std": 0.0,
+      "threshold": 0.0,
+      "direction": "lower_is_misplaced"
+    }
+  },
+  "thresholds": {
+    "std_chair_x": {
+      "value": 0.20690965332290256,
+      "direction": "higher_is_misplaced",
+      "score": 1.1726666299978015
+    },
+    "x_variance": {
+      "value": 0.05097086827897371,
+      "direction": "higher_is_misplaced",
+      "score": 0.9352390372959598
+    },
+    "avg_aspect_ratio": {
+      "value": 1.6914916410618508,
+      "direction": "higher_is_misplaced",
+      "score": 0.6352370387284417
+    },
+    "std_chair_y": {
+      "value": 0.1543289729828798,
+      "direction": "higher_is_misplaced",
+      "score": 0.3149860086546551
+    },
+    "floor_exposure": {
+      "value": 0.3349924045138889,
+      "direction": "higher_is_misplaced",
+      "score": 0.28315248103779195
+    },
+    "avg_spacing": {
+      "value": 0.1419392526256846,
+      "direction": "higher_is_misplaced",
+      "score": 0.26135779517016045
+    },
+    "std_spacing": {
+      "value": 0.08382634797485675,
+      "direction": "higher_is_misplaced",
+      "score": 0.18395726984722
+    },
+    "y_variance": {
+      "value": 0.024482760570449392,
+      "direction": "higher_is_misplaced",
+      "score": 0.17529239876362918
+    },
+    "blue_desk_exposure": {
+      "value": 0.21833959056712965,
+      "direction": "lower_is_misplaced",
+      "score": 0.16655220454074274
+    }
+  }
+}
