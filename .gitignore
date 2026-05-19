@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.python-version
+.venv/
+venv/
+ENV/
+env/
+.ENV
+*.sqlite3
+*.db
+
+# Environment files
+.env
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+frontend/dist/
+
+# Backend generated results
+backend/results/
+backend/uploads/
+backend/reports/
+
+# Model artifacts and temporary files
+*.pt
+*.pth
+*.h5
+
+# Logs
+*.log
+
+# Misc
+tmp.json

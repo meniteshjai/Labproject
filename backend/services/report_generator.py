@@ -224,7 +224,7 @@ def generate_pdf_report(
         chair_rows = [chair_header]
 
         for chair in details["chairs"]:
-            cid = chair.get("chair_id", 0) + 1
+            cid = chair.get("chair_id", 0)
             is_ok = chair.get("is_properly_arranged", False)
             conf = chair.get("confidence", 0)
             score = chair.get("alignment_score", 0)

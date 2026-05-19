@@ -155,9 +155,34 @@ async def get_analysis(analysis_id: str) -> Optional[Dict[str, Any]]:
         if row:
             result = dict(row)
             if result.get("details_json"):
-                result["details"] = json.loads(result["details_json"])
+                try:
+                    result["details"] = json.loads(result["details_json"])
+                except json.JSONDecodeError as e:
+                    import logging
+                    logging.error(f"Failed to parse JSON for analysis {analysis_id}: {e}")
+                    result["details"] = None
             return result
         return None
+    finally:
+        await db.close()
+
+
+async def delete_analysis(analysis_id: str) -> None:
+    """Delete an analysis record from the database."""
+    db = await get_db()
+    try:
+        await db.execute("DELETE FROM analyses WHERE id = ?", (analysis_id,))
+        await db.commit()
+    finally:
+        await db.close()
+
+
+async def delete_all_analyses() -> None:
+    """Delete all analysis records from the database."""
+    db = await get_db()
+    try:
+        await db.execute("DELETE FROM analyses")
+        await db.commit()
     finally:
         await db.close()
 
@@ -203,7 +228,12 @@ async def get_analyses(
         for row in rows:
             item = dict(row)
             if item.get("details_json"):
-                item["details"] = json.loads(item["details_json"])
+                try:
+                    item["details"] = json.loads(item["details_json"])
+                except json.JSONDecodeError as e:
+                    import logging
+                    logging.error(f"Failed to parse JSON for analysis {item.get('id')}: {e}")
+                    item["details"] = None
             else:
                 item["details"] = None
             results.append(item)
